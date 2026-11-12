@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.pkl
+*.log
+*.dll
+*.tmod
+*.il
+.env
+.env.*
+results_current/
+*_jobs/
+*_trials.csv

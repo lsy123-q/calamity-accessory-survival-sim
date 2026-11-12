@@ -1,0 +1,244 @@
+{
+  "settings": {
+    "PLAYER_MAX_HP": 725,
+    "MAX_LIFE1": 600,
+    "MAX_MANA": 380,
+    "START_HP_FRACTION": 1.0,
+    "DEFENSE_MIN": 118,
+    "DEFENSE_MAX": 154,
+    "BASE_DR": 0.1,
+    "DEFENSE_EFFECTIVENESS": 1.0,
+    "MOVING": true,
+    "FOOD_REGEN_PENALTY": false,
+    "INITIAL_REGEN_TIME_TICKS": 3600,
+    "SPONGE_START_FULL": true,
+    "HEART_START_FULL": false,
+    "DIFFICULTY_LABEL": "Master Death",
+    "RAW_DAMAGE_MIN": 400,
+    "RAW_DAMAGE_MAX": 600,
+    "PROJECTILE_PROBABILITY": 0.75,
+    "HIT_COUNT_MIN": 1,
+    "HIT_COUNT_MAX": 15,
+    "MIN_ATTACK_GAP_TICKS": 40,
+    "FIXED_DURATION_SECONDS": 270,
+    "RANDOM_DURATION_MIN_SECONDS": 180,
+    "RANDOM_DURATION_MAX_SECONDS": 270,
+    "SAMPLES_PER_HIT_COUNT": 100,
+    "DATASETS": [
+      "fixed",
+      "random"
+    ],
+    "DEBUFF_PROBABILITY": 0.5,
+    "DEBUFF_DPS": 25,
+    "DEBUFF_DURATION_SECONDS": 3,
+    "DEFENSE_DAMAGE_PROBABILITY": 0.5,
+    "DEFENSE_DAMAGE_RATIO": 0.3333,
+    "DEFENSE_DAMAGE_FLOOR": 24,
+    "DD_RECOVERY_BASE_TICKS": 60,
+    "DD_RECOVERY_MAX_TICKS": 900,
+    "DD_DELAY_AFTER_IMMUNITY_TICKS": 10,
+    "POTION_HEAL": 300,
+    "POTION_TRIGGER_MISSING_HP": 300,
+    "POTION_COOLDOWN_SECONDS": 60,
+    "POTION_START_READY": true,
+    "HEART_HEAL_TRIGGER_MISSING_HP": 180,
+    "ABSORBER_AURA_STAY_SECONDS": 30,
+    "MODE": "single",
+    "ACCESSORIES": [
+      "sponge",
+      "chalice",
+      "rampart",
+      "radiance",
+      "core",
+      "heart",
+      "evolution",
+      "absorber",
+      "nebulous"
+    ],
+    "HEART_POLICIES": [
+      "heal",
+      "parry"
+    ],
+    "PROJECTILE_TYPE_COUNTS": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "COMBO_PROJECTILE_TYPE_COUNTS": [
+      4
+    ],
+    "WEIGHT_MODE": "sigmoid_plateau",
+    "SIGMOID_MIDPOINT": 4.0,
+    "SIGMOID_STEEPNESS": 1.0,
+    "SIGMOID_PLATEAU_START": 7,
+    "WORKERS": 4,
+    "OUTPUT_DIRECTORY": "results_current",
+    "FIXED_EVENT_SEED": 810000,
+    "RANDOM_EVENT_SEED": 1810000,
+    "FIXED_EXTRA_SEED": 910000,
+    "RANDOM_EXTRA_SEED": 1910000,
+    "RANDOM_DURATION_SEED": 1010000,
+    "FIXED_TYPE_FRACTION_SEED": 2910000,
+    "RANDOM_TYPE_FRACTION_SEED": 3910000,
+    "FPS": 60,
+    "RAMPART_HONEY_ENABLED": true
+  },
+  "configurations": [
+    {
+      "name": "baseline",
+      "items": [],
+      "policy": "heal",
+      "types": 4
+    },
+    {
+      "name": "sponge",
+      "items": [
+        "sponge"
+      ],
+      "policy": "heal",
+      "types": 4
+    },
+    {
+      "name": "chalice",
+      "items": [
+        "chalice"
+      ],
+      "policy": "heal",
+      "types": 4
+    },
+    {
+      "name": "rampart",
+      "items": [
+        "rampart"
+      ],
+      "policy": "heal",
+      "types": 4
+    },
+    {
+      "name": "radiance",
+      "items": [
+        "radiance"
+      ],
+      "policy": "heal",
+      "types": 4
+    },
+    {
+      "name": "core",
+      "items": [
+        "core"
+      ],
+      "policy": "heal",
+      "types": 4
+    },
+    {
+      "name": "heart_heal",
+      "items": [
+        "heart"
+      ],
+      "policy": "heal",
+      "types": 4
+    },
+    {
+      "name": "heart_parry",
+      "items": [
+        "heart"
+      ],
+      "policy": "parry",
+      "types": 4
+    },
+    {
+      "name": "evolution_2",
+      "items": [
+        "evolution"
+      ],
+      "policy": "heal",
+      "types": 2
+    },
+    {
+      "name": "evolution_3",
+      "items": [
+        "evolution"
+      ],
+      "policy": "heal",
+      "types": 3
+    },
+    {
+      "name": "evolution_4",
+      "items": [
+        "evolution"
+      ],
+      "policy": "heal",
+      "types": 4
+    },
+    {
+      "name": "evolution_5",
+      "items": [
+        "evolution"
+      ],
+      "policy": "heal",
+      "types": 5
+    },
+    {
+      "name": "evolution_6",
+      "items": [
+        "evolution"
+      ],
+      "policy": "heal",
+      "types": 6
+    },
+    {
+      "name": "evolution_7",
+      "items": [
+        "evolution"
+      ],
+      "policy": "heal",
+      "types": 7
+    },
+    {
+      "name": "evolution_8",
+      "items": [
+        "evolution"
+      ],
+      "policy": "heal",
+      "types": 8
+    },
+    {
+      "name": "absorber",
+      "items": [
+        "absorber"
+      ],
+      "policy": "heal",
+      "types": 4
+    },
+    {
+      "name": "nebulous",
+      "items": [
+        "nebulous"
+      ],
+      "policy": "heal",
+      "types": 4
+    }
+  ],
+  "weights": {
+    "1": 0.004264689222543248,
+    "2": 0.010719115596249098,
+    "3": 0.024184089914755805,
+    "4": 0.044961631033928084,
+    "5": 0.06573917215310036,
+    "6": 0.07920414647160705,
+    "7": 0.08565857284531293,
+    "8": 0.08565857284531293,
+    "9": 0.08565857284531293,
+    "10": 0.08565857284531293,
+    "11": 0.08565857284531293,
+    "12": 0.08565857284531293,
+    "13": 0.08565857284531293,
+    "14": 0.08565857284531293,
+    "15": 0.08565857284531293
+  },
+  "smoke": false
+}
